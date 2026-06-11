@@ -1,83 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ahalya Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahalya Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<nav>
-    <h2>Ahalya</h2>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">Ahalya</h2>
 
-<section id="home" class="hero">
-    <h1>Hi, I'm AHALYA THIRLANGI</h1>
-    <p>FullStack Developer | Java Learner | Tech Enthusiast</p>
-    <button>Download Resume</button>
-</section>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a Information Technology student passionate about web development,
-        Java programming and creating responsive websites.
-    </p>
-</section>
+        <a href="#contact" class="btn">Hire Me</a>
+    </nav>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="cards">
-        <div class="card">Java</div>
-        <div class="card">Python</div>
-        <div class="card">C</div>
-        <div class="card">HTML5</div>
-        <div class="card">CSS3</div>
-        <div class="card">JavaScript</div>
-        <div class="card">PHP</div>
-        <div class="card">GitHub</div>
-        <div class="card">MySQL</div>
-        <div class="card">VSCode</div>
-        <div class="card">React</div>
+    <!-- HERO -->
+    <section id="home" class="hero">
 
+        <div class="hero-left">
+            <p>Hello, I'm</p>
 
-    </div>
-</section>
+            <h1>AHALYA THIRLANGI</h1>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Portfolio Website</h3>
-            <p>Personal portfolio project.</p>
+            <h2>FullStack WebDeveloper</h2>
+
+            <p class="desc">
+                Passionate about FullStack Web Development,
+                Java Programming and creating responsive websites.
+            </p>
+
+            <div class="buttons">
+                <button>Hire Me</button>
+                <button class="outline">Download Resume</button>
+            </div>
+
+            <div class="stats">
+                <div class="stat-box">
+                    <h3>2</h3>
+                    <p>Projects</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>10+</h3>
+                    <p>Skills</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>3</h3>
+                    <p>Certificates</p>
+                </div>
+            </div>
+
         </div>
 
-        <div class="card">
-            <h3>Indian Fermented Food Website </h3>
-            <p>Built using Python.</p>
+        <div class="hero-right">
+
+            <div class="image-box">
+                <img src="profile.jpg" alt="Profile">
+            </div>
+
         </div>
-    </div>
-</section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email:ahalyathirlangi2006@gmail.com</p>
-    <p>GitHub: https://github.com/AhalyaThirlangi</p>
-    <p>LinkedIn: https://www.linkedin.com/in/ahalya-thirlangi-a2740334b</p>
-</section>
+    </section>
 
-<footer>
-    <p>© 2026 Ahalya Thirlangi</p>
-</footer>
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2 class="title">About Me</h2>
+
+        <div class="card">
+            <p>
+                I am a Inforrmation Technology student passionate about
+                web development and software development.
+                I enjoy building modern, responsive and user-friendly websites.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <h2 class="title">Skills</h2>
+
+        <div class="grid">
+            <div class="card">Java</div>
+            <div class="card">Python</div>
+            <div class="card">C</div>
+            <div class="card">HTML5</div>
+            <div class="card">CSS3</div>
+            <div class="card">JavaScript</div>
+            <div class="card">MySQL</div>
+            <div class="card">PHP</div>
+            <div class="card">Git</div>
+            <div class="card">GitHub</div>
+            <div class="card">VSCode</div>
+            <div class="card">React</div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2 class="title">Projects</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p>Personal Portfolio using HTML, CSS and JS.</p>
+            </div>
+
+            <div class="card">
+                <h3>Indian Fermented Foods and Gut Health Information Portal </h3>
+                <p>Python based project.</p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2 class="title">Contact Me</h2>
+
+        <div class="card">
+
+            <p>Email : ahalyathirlangi2006@gmail.com</p>
+
+            <p>GitHub : https://github.com/AhalyaThirlangi</p>
+
+            <p>LinkedIn : https://www.linkedin.com/in/ahalya-thirlangi-a2740334b</p>
+
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 Ahalya Thirlangi
+    </footer>
 
 </body>
 </html>

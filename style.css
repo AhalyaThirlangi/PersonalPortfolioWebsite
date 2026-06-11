@@ -1,3 +1,12 @@
+:root{
+    --bg: #0A192F;
+    --nav: #112240;
+    --card: #1B2A41;
+    --text: #E6F1FF;
+    --accent: #64FFDA;
+}
+
+
 *{
     margin:0;
     padding:0;

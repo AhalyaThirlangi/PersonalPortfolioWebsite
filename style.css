@@ -78,6 +78,7 @@ nav ul li a{
     background:var(--accent-color);
     filter:blur(180px);
     opacity:.25;
+    pointer-events:none;
 }
 
 .hero-left{
@@ -188,6 +189,7 @@ footer{
     padding:25px;
     background:var(--nav-color);
 }
+
 
 
 @media screen and (max-width: 1024px){
@@ -476,4 +478,110 @@ table tr:last-child td{
 table tr:hover{
     background:rgba(255,255,255,0.05);
     transition:0.3s;
+}
+
+/* Particle Background */
+#particles-js{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+
+/* Navbar Underline */
+nav ul li a{
+    position:relative;
+}
+
+nav ul li a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:2px;
+    background:var(--accent-color);
+    transition:.4s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+
+/* Buttons */
+.btn{
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:
+    0 0 10px var(--accent-color),
+    0 0 20px var(--accent-color),
+    0 0 40px var(--accent-color);
+}
+
+/* Floating Profile */
+.image-box{
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+/* Card Hover */
+.card{
+    transition:.5s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px var(--accent-color);
+}
+
+/* Project Cards */
+#projects .card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+/* Certificate Cards */
+#certifications .card:hover{
+    transform:translateY(-10px) rotate(1deg);
+}
+
+/* Statistics */
+.stat-box{
+    transition:.4s;
+}
+
+.stat-box:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 15px var(--accent-color);
+}
+
+/* Fade Animation */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.card{
+    animation:fadeUp 1s ease;
 }
